@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Khaleel - Developer | Python | AI &amp; ML | Web Development</title>
+  <desc id="d">A dark maroon night sky with stars, a crescent moon, soft clouds and a subtle neural-network motif.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12030a"/>
+      <stop offset="0.45" stop-color="#3d0b1c"/>
+      <stop offset="0.75" stop-color="#2a0814"/>
+      <stop offset="1" stop-color="#0a0406"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.28" r="0.55">
+      <stop offset="0" stop-color="#8b1e3f" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b1e3f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f3e3e6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f3e3e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e3c4cb"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0509"/>
+      <stop offset="1" stop-color="#050203"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <mask id="crescent">
+      <rect width="1200" height="320" fill="#fff"/>
+      <circle cx="1043" cy="72" r="34" fill="#000"/>
+    </mask>
+    <clipPath id="round"><rect width="1200" height="320" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <!-- sky -->
+    <rect width="1200" height="320" fill="url(#sky)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+
+    <!-- soft clouds -->
+    <g filter="url(#blur)" fill="#a22a4c" opacity="0.28">
+      <ellipse cx="260" cy="210" rx="240" ry="26"/>
+      <ellipse cx="760" cy="180" rx="210" ry="20"/>
+      <ellipse cx="1010" cy="230" rx="190" ry="22"/>
+    </g>
+    <g filter="url(#blur)" fill="#e7b6c2" opacity="0.08">
+      <ellipse cx="500" cy="120" rx="220" ry="16"/>
+      <ellipse cx="120" cy="95" rx="140" ry="12"/>
+    </g>
+
+    <!-- stars -->
+    <g fill="#fff">
+      <circle cx="60" cy="40" r="1.4" opacity="0.8"/>
+      <circle cx="130" cy="95" r="1" opacity="0.6"/>
+      <circle cx="190" cy="30" r="1.2" opacity="0.7"/>
+      <circle cx="245" cy="70" r="0.9" opacity="0.5"/>
+      <circle cx="320" cy="25" r="1.5" opacity="0.85"/>
+      <circle cx="380" cy="110" r="1" opacity="0.5"/>
+      <circle cx="440" cy="50" r="1.1" opacity="0.7"/>
+      <circle cx="520" cy="28" r="0.9" opacity="0.6"/>
+      <circle cx="585" cy="85" r="1.3" opacity="0.75"/>
+      <circle cx="650" cy="40" r="1" opacity="0.6"/>
+      <circle cx="715" cy="105" r="0.9" opacity="0.5"/>
+      <circle cx="780" cy="30" r="1.4" opacity="0.85"/>
+      <circle cx="840" cy="75" r="1" opacity="0.6"/>
+      <circle cx="905" cy="38" r="1.2" opacity="0.7"/>
+      <circle cx="960" cy="110" r="0.9" opacity="0.5"/>
+      <circle cx="1120" cy="35" r="1.3" opacity="0.8"/>
+      <circle cx="1160" cy="95" r="1" opacity="0.6"/>
+      <circle cx="1100" cy="140" r="0.9" opacity="0.5"/>
+      <circle cx="35" cy="150" r="1" opacity="0.5"/>
+      <circle cx="95" cy="205" r="0.9" opacity="0.4"/>
+      <circle cx="560" cy="150" r="0.8" opacity="0.4"/>
+      <circle cx="940" cy="170" r="0.9" opacity="0.4"/>
+      <circle cx="1175" cy="190" r="0.9" opacity="0.4"/>
+      <circle cx="410" cy="190" r="0.8" opacity="0.35"/>
+    </g>
+    <!-- gentle twinkle on a few stars -->
+    <g fill="#fff">
+      <circle cx="320" cy="25" r="2" opacity="0.2"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="780" cy="30" r="2" opacity="0.2"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="35" r="2" opacity="0.2"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- moon -->
+    <circle cx="1030" cy="72" r="90" fill="url(#moonGlow)"/>
+    <circle cx="1030" cy="72" r="38" fill="#f3e3e6" mask="url(#crescent)"/>
+
+    <!-- subtle AI / neural-network motif -->
+    <g stroke="#c0394f" stroke-width="1" opacity="0.30" fill="none">
+      <line x1="860" y1="205" x2="930" y2="170"/>
+      <line x1="930" y1="170" x2="1000" y2="215"/>
+      <line x1="930" y1="170" x2="1020" y2="150"/>
+      <line x1="1000" y1="215" x2="1090" y2="185"/>
+      <line x1="1020" y1="150" x2="1090" y2="185"/>
+      <line x1="1090" y1="185" x2="1150" y2="225"/>
+      <line x1="860" y1="205" x2="1000" y2="215"/>
+    </g>
+    <g fill="#e0556c" opacity="0.65">
+      <circle cx="860" cy="205" r="3.5"/>
+      <circle cx="930" cy="170" r="4"/>
+      <circle cx="1000" cy="215" r="3.5"/>
+      <circle cx="1020" cy="150" r="3"/>
+      <circle cx="1090" cy="185" r="4"/>
+      <circle cx="1150" cy="225" r="3"/>
+    </g>
+
+    <!-- faint code motif -->
+    <text x="48" y="262" font-family="Consolas, 'Courier New', monospace" font-size="22" fill="#c0394f" opacity="0.35">&lt;/&gt;   {  }   def learn():</text>
+
+    <!-- horizon -->
+    <path d="M0 270 C 160 245, 300 275, 470 258 C 640 240, 760 280, 940 262 C 1060 250, 1140 268, 1200 258 L1200 320 L0 320 Z" fill="url(#ground)"/>
+    <path d="M0 270 C 160 245, 300 275, 470 258 C 640 240, 760 280, 940 262 C 1060 250, 1140 268, 1200 258" fill="none" stroke="#8b1e3f" stroke-opacity="0.5" stroke-width="1.5"/>
+
+    <!-- text -->
+    <text x="600" y="150" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="6" fill="url(#title)">KHALEEL</text>
+    <line x1="520" y1="176" x2="680" y2="176" stroke="#e0556c" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <text x="600" y="214" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" letter-spacing="2" fill="#e8d5d9">Developer  |  Python  |  AI &amp; ML  |  Web Development</text>
+  </g>
+</svg>
